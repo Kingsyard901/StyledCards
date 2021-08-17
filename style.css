@@ -1,0 +1,18 @@
+* {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.container {
+    /* Container for all the cards added */
+    /* Use gridsystem and make it responsive from beginning */
+}
+
+.card {
+    /* CSS styling for the card */
+    /* Img, Header and content. Style with hover effects and shadows. */
+}
+
+.cardButton {
+    /* CSS styling for cardButton */
+}

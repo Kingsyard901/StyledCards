@@ -1,18 +1,45 @@
 * {
     background-color: black;
-    color: whitesmoke;
 }
 
 .container {
     /* Container for all the cards added */
-    /* Use gridsystem and make it responsive from beginning */
+    /* Use flexbox and make it responsive from beginning */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 5%;
 }
 
 .card {
     /* CSS styling for the card */
     /* Img, Header and content. Style with hover effects and shadows. */
+    padding: 10% 10% 1% 1%;
+    margin: 2%;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .cardButton {
     /* CSS styling for cardButton */
+    background-color: none;
+    border: 2px solid #555555;
+    border-radius: 5%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
+
+.cardButton:hover {
+  background-color: #555555;
+  box-shadow: 2px 2px 2px gray;
+}
+

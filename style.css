@@ -1,47 +1,88 @@
-* {
+body {
     background-color: black;
+    padding: 20px;
 }
 
 .container {
     /* Container for all the cards added */
     /* Use flexbox and make it responsive from beginning */
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2%;
-    padding: 5%;
+    display: grid;
+    grid-gap: 5px;
+    
+
 }
 
-.card {
-    /* CSS styling for the card */
-    /* Img, Header and content. Style with hover effects and shadows. */
-    /* UPDATE: I want darker shadows. Just enough to mark out the card, with transparent background. */
-    padding: 10% 10% 1% 1%;
-    margin: 2%;
-    /* border: 2px solid whitesmoke; */
-    color: whitesmoke;
-    border-radius: 10%;
-    box-shadow: 5px 5px 10px gray;
+.container > div {
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.transIcon {
+    background-image: transparent;
+}
+
+.card1 {
+    /* CSS card */
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: tomato;
+}
+
+.card2 {
+    /* CSS card */
+    grid-column: 2 / span  1;
+    background-color: teal;
+}
+
+.card3 {
+    /* CSS card */
+    grid-column: 3;
+    background-color: thistle;
+}
+
+.card4 {
+    /* CSS card */
+    grid-column: 2 / span 2;
+    background-color: violet;
+}
+
+.card5 {
+    /* CSS card */
+    grid-column: 1 / span 2;
+    background-color: bisque;
+}
+
+.card6 {
+    /* CSS card */
+    background-color: chartreuse;
 }
 
 .cardButton {
     /* UPDATE: I want to remove the top and left white on the buttons. */
     /* CSS styling for cardButton */
     background-color: transparent;
-    /* border: 2px solid #555555; */
-    /* border-radius: 5%; */
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
+    color: cornsilk;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.linkStyleNone {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
 }
 
 .cardButton:hover {
   /* background-color: #555555; */
-  box-shadow: 2px 2px 2px gray;
+    box-shadow: 3px 3px 3px rgba(27, 27, 27, 0.76);
+    cursor: pointer;
 }
 
+.cardHeader {
+    /* CSS for Cards Header */
+    color: whitesmoke;
+}
+
+.cardText {
+    /* CSS for cards text below header */
+    color: whitesmoke;
+}

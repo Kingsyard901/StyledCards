@@ -25,36 +25,30 @@ body {
     /* CSS card */
     grid-column: 1;
     grid-row: 1 / span 2;
-    background-color: tomato;
 }
 
 .card2 {
     /* CSS card */
     grid-column: 2 / span  1;
-    background-color: teal;
 }
 
 .card3 {
     /* CSS card */
     grid-column: 3;
-    background-color: thistle;
 }
 
 .card4 {
     /* CSS card */
     grid-column: 2 / span 2;
-    background-color: violet;
 }
 
 .card5 {
     /* CSS card */
     grid-column: 1 / span 2;
-    background-color: bisque;
 }
 
 .card6 {
     /* CSS card */
-    background-color: chartreuse;
 }
 
 .cardButton {
